@@ -2,7 +2,7 @@
 
 */
 
-let lista = document.querySelector("ul")
+let lista = document.querySelector("#list")
 
 let team = [
 
@@ -48,7 +48,9 @@ let team = [
 
 for(let i= 0; i<team.length; i++){
    // console.log(team[i])
-    lista.innerHTML += `<li>${team[i].nome} ; ${team[i].ruolo} ;<img src= ${team[i].foto} alt="image"></li>`
+    let imagini = `<img src= ${team[i].foto} alt="image"></img>`
+
+    lista.innerHTML += `<div>${team[i].nome}  ${team[i].ruolo} ${imagini}  </div>`
 }
 
 
