@@ -50,7 +50,7 @@ for(let i= 0; i<team.length; i++){
    // console.log(team[i])
     let imagini = `<img src= ${team[i].foto} alt="image"></img>`
 
-    lista.innerHTML += `<div> ${imagini}   ${team[i].nome}  <span>${team[i].ruolo}</span>   </div>`
+    lista.innerHTML += `<div class="grid"> <div> ${imagini}   ${team[i].nome}  <span>${team[i].ruolo}</span> </div> </div>`
 }
 
 

@@ -1,6 +1,6 @@
 
 body{
-    background-color: blanchedalmond;
+    background-color: whitesmoke;
 }
 
 .schema *{
@@ -19,7 +19,6 @@ body{
 }
 
 .container{
- border: 1px red solid;
  max-width: 1200px;
  margin-left: auto;
  margin-right: auto;
@@ -31,12 +30,25 @@ body{
     height: auto;
 }
 
-.container div{
+.container .grid{
     width: calc(100% / 3);
     padding: 10px;
+    
+
+}
+
+.grid div{
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    background-color: white;
+   
+}
 
+.grid span{
+    padding: 5px;
+    background-color:lightskyblue;
+    color: white;
 }
