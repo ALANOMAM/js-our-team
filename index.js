@@ -2,6 +2,7 @@
 
 */
 
+let lista = document.querySelector("ul")
 
 let team = [
 
@@ -46,8 +47,11 @@ let team = [
 //console.log(team)
 
 for(let i= 0; i<team.length; i++){
-    console.log(team[i])
+   // console.log(team[i])
+    lista.innerHTML += `<li>${team[i].nome} ; ${team[i].ruolo} ; ${team[i].foto}</li>`
 }
+
+
 
 
 
